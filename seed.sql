@@ -11,10 +11,10 @@ INSERT INTO bolsista (matricula, pnome, mnome, unome, editor, anotador, email) V
 (24200128, 'Rai', 'Leon', 'Souza', FALSE, TRUE, 'rai.souza@example.com');
 
 INSERT INTO entrevista (codigo, fase) VALUES
-(1, 'EDITADO'),
-(2, 'EDIÇÃO'),
-(3, 'EDIÇÃO'),
-(4, 'EDITADO');
+(1, 'EDITADO', '2026-01-15'),
+(2, 'EDIÇÃO', '2026-02-20'),
+(3, 'EDIÇÃO', '2026-03-10'),
+(4, 'EDITADO', '2026-04-01');
 
 INSERT INTO entrevistado (CPF, pnome, mnome, unome, datanasc, codigo_entrevista) VALUES
 ('123.456.789-00', 'Arthur', 'Castro', 'Kaster', '1990-01-01', 1),
@@ -28,7 +28,7 @@ INSERT INTO entrevistado (CPF, pnome, mnome, unome, datanasc, codigo_entrevista)
 
 INSERT INTO etapa (id, tipo, andamento, video, cpf_entrevistado1, cpf_entrevistado2, codigo_entrevista) VALUES
 (1, 'Conversação', 'ANOTAÇÃO', 'video1.mp4', '123.456.789-00', '987.654.321-00', 1),
-(1, 'Narrativa', 'ANOTAÇÃO', 'video2.mp4', '123.456.789-00', '987.654.321-00', 1),
+(2, 'Narrativa', 'ANOTAÇÃO', 'video2.mp4', '123.456.789-00', '987.654.321-00', 1),
 (3, 'Entrevista', 'ANOTAÇÃO', 'video3.mp4', '123.456.789-00', NULL, 1),
 (4, 'Entrevista', 'TRADUÇÃO', 'video4.mp4', '987.654.321-00', NULL, 1),
 (5, 'Vocabulário', 'TRADUÇÃO', 'video5.mp4', '987.654.321-00', NULL, 1),
