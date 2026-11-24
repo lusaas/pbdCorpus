@@ -5,7 +5,8 @@ CREATE TABLE bolsista (
 	unome VARCHAR(100),
 	editor BOOL,
 	anotador BOOL,
-    email VARCHAR(100) UNIQUE NOT NULL
+    email VARCHAR(100) UNIQUE NOT NULL,
+	CHECK (editor = TRUE OR anotador = TRUE)
 );
 
 CREATE TABLE entrevista (
