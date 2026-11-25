@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS anota, edita, etapa, entrevistado, entrevista, bolsista CASCADE;
+
 CREATE TABLE bolsista (
     matricula INT PRIMARY KEY,
 	pnome VARCHAR(100) NOT NULL,
@@ -110,6 +112,7 @@ SELECT
     e.mnome,
     e.unome,
     e.datanasc,
+	et.dia AS dia_entrevista,
     EXTRACT(YEAR FROM AGE(et.dia, e.datanasc))::INT AS idade_entrevista,
     CASE
         WHEN EXTRACT(YEAR FROM AGE(et.dia, e.datanasc)) BETWEEN 18 AND 29 THEN '18-29'

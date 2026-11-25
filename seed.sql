@@ -10,7 +10,7 @@ INSERT INTO bolsista (matricula, pnome, mnome, unome, editor, anotador, email) V
 (24200127, 'Larissa', NULL, NULL, FALSE, TRUE, 'larissa@example.com'),
 (24200128, 'Rai', 'Leon', 'Souza', FALSE, TRUE, 'rai.souza@example.com');
 
-INSERT INTO entrevista (codigo, fase) VALUES
+INSERT INTO entrevista (codigo, fase, dia) VALUES
 (1, 'EDITADO', '2026-01-15'),
 (2, 'EDIÇÃO', '2026-02-20'),
 (3, 'EDIÇÃO', '2026-03-10'),
